@@ -3,7 +3,8 @@ alias copyssh="pbcopy < $HOME/.ssh/id_ed25519.pub"
 alias reloadshell="source $HOME/.zshrc"
 alias reloaddns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 alias ll="/opt/homebrew/opt/coreutils/libexec/gnubin/ls -AhlFo --color --group-directories-first"
-alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
+alias webstorm='open -a /Applications/PhpStorm.app "`pwd`"'
+alias vsc='code .'
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 alias c="clear"
 alias compile="commit 'compile'"
@@ -12,9 +13,12 @@ alias version="commit 'version'"
 # Directories
 alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
-alias sites="cd $HOME/Sites"
-alias lara="sites && cd laravel/"
-alias docs="lara && cd docs/"
+alias code="cd $HOME/Code"
+alias neverstatic="sites && cd neverstatic/"
+alias papatom="sites && cd papatom/"
+alias sp="sites && cd strichpunkt-design/"
+alias dhlnext="sites && cd strichpunkt-design/dpdhl-next"
+alias mindmates="sites && cd mind-mates/"
 
 # Laravel
 alias a="php artisan"
@@ -22,6 +26,12 @@ alias fresh="php artisan migrate:fresh --seed"
 alias tinker="php artisan tinker"
 alias seed="php artisan db:seed"
 alias serve="php artisan serve"
+
+# Statamic
+alias scache="php artisan cache:clear"
+alias sconfig="php artisan config:clear && php artisan config:cache"
+alias sroutes="php artisan routes:clear && php artisan routes:cache"
+alias srefresh="echo 'Refreshing Statamic instance...' && scache && sconfig && sroutes && echo 'Refreshing done!'"
 
 # PHP
 alias cfresh="rm -rf vendor/ composer.lock && composer i"
@@ -33,9 +43,6 @@ alias watch="npm run watch"
 
 # Docker
 alias docker-composer="docker-compose"
-
-# SQL Server
-alias mssql="docker run -e ACCEPT_EULA=Y -e SA_PASSWORD=LaravelWow1986! -p 1433:1433 mcr.microsoft.com/mssql/server:2017-latest"
 
 # Git
 alias gst="git status"

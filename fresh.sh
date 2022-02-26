@@ -33,18 +33,21 @@ mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_passwor
 pecl install imagick redis swoole
 
 # Install global Composer packages
-/usr/local/bin/composer global require laravel/installer laravel/valet beyondcode/expose
+/usr/local/bin/composer global require laravel/installer laravel/valet beyondcode/expose statamic/cli
 
 # Install Laravel Valet
 $HOME/.composer/vendor/bin/valet install
 
 # Create a Sites directory
-mkdir $HOME/Sites
+mkdir $HOME/Code
 
 # Create sites subdirectories
-mkdir $HOME/Sites/blade-ui-kit
-mkdir $HOME/Sites/eventsauce
-mkdir $HOME/Sites/laravel
+mkdir $HOME/Code/strichpunkt-design
+mkdir $HOME/Code/strichpunkt-design/dpdhl-next
+mkdir $HOME/Code/papatom
+mkdir $HOME/Code/neverstatic
+mkdir $HOME/Code/mind-mates
+mkdir $HOME/Code/nutz
 
 # Clone Github repositories
 $DOTFILES/clone.sh
