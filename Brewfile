@@ -93,6 +93,7 @@ cask 'sip' # Color picker
 
 # Browsers & Web
 cask 'google-chrome'
+cask 'firefox'
 cask 'firefoxdeveloperedition'
 cask 'opera'
 cask 'brave-browser'
@@ -122,6 +123,7 @@ cask 'font-source-serif-pro'
 # Mac App Store
 mas 'Keynote', id: 409183694
 mas 'Numbers', id: 409203825
+mas 'Pages', id: 361309726
 mas 'Magnet', id: 441258766 # Window Manager
 mas 'Craft', id: 1487937127 # Document Building
 mas 'Canary Mail', id: 1236045954 # Mails

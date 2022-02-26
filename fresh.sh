@@ -47,6 +47,7 @@ mkdir $HOME/Code/strichpunkt-design/dpdhl-next
 mkdir $HOME/Code/papatom
 mkdir $HOME/Code/neverstatic
 mkdir $HOME/Code/mind-mates
+mkdir $HOME/Code/mind-mates/nushu
 mkdir $HOME/Code/nutz
 
 # Clone Github repositories
