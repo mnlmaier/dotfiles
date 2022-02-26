@@ -38,8 +38,8 @@ git clone git@github.com:neverstatic/tsv-muenchen-newsletter.git $PAPATOM/tsv-mu
 git clone git@github.com:neverstatic/klenk-website.git $PAPATOM/klenk-website
 git clone git@github.com:neverstatic/klenk-website.git $PAPATOM/klenk-website
 
-echo "Cloning relevant STRICHPUNKT repositories..."
 # Strichpunkt Design
+echo "Cloning relevant STRICHPUNKT repositories..."
 git clone git@github.com:strichpunkt-design/dpdhl-next-api.git $DHLNEXT/dpdhl-next-api
 git clone git@github.com:strichpunkt-design/dpdhl-next-medialibrary.git $DHLNEXT/dpdhl-next-medialibrary
 git clone git@github.com:strichpunkt-design/dpdhl-next-orchestrator.git $DHLNEXT/dpdhl-next-orchestrator
