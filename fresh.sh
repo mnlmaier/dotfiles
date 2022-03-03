@@ -19,6 +19,10 @@ fi
 rm -rf $HOME/.zshrc
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 
+# Adds .huskyrc to home (and removes if exists)
+rm -rf $HOME/.huskyrc
+ln -s $HOME/.dotfiles/.huskyrc $HOME/.huskyrc
+
 # Update Homebrew recipes
 brew update
 
