@@ -4,7 +4,6 @@ alias reloadshell="source $HOME/.zshrc"
 alias reloaddns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 alias ll="/opt/homebrew/opt/coreutils/libexec/gnubin/ls -AhlFo --color --group-directories-first"
 alias webstorm='open -a /Applications/WebStorm.app "`pwd`"'
-alias vsc="/Applications/Visual Studio Code.app" "`pwd`"
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 alias c="clear"
 alias compile="commit 'compile'"
@@ -13,12 +12,12 @@ alias version="commit 'version'"
 # Directories
 alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
-alias code="cd $HOME/Code"
-alias neverstatic="sites && cd neverstatic/"
-alias papatom="sites && cd papatom/"
-alias sp="sites && cd strichpunkt-design/"
-alias dhlnext="sites && cd strichpunkt-design/dpdhl-next"
-alias mindmates="sites && cd mind-mates/"
+alias projects="cd $HOME/Code"
+alias neverstatic="projects && cd neverstatic/ && ls"
+alias papatom="projects && cd papatom/ && ls"
+alias sp="projects && cd strichpunkt-design/ && ls"
+alias dhlnext="projects && cd strichpunkt-design/dpdhl-next && ls"
+alias mindmates="projects && cd mind-mates/ && ls"
 
 # Laravel
 alias a="php artisan"
@@ -30,8 +29,9 @@ alias serve="php artisan serve"
 # Statamic
 alias scache="php artisan cache:clear"
 alias sconfig="php artisan config:clear && php artisan config:cache"
-alias sroutes="php artisan routes:clear && php artisan routes:cache"
-alias srefresh="echo 'Refreshing Statamic instance...' && scache && sconfig && sroutes && echo 'Refreshing done!'"
+alias sroutes="php artisan route:clear && php artisan route:cache"
+alias spresets="php artisan statamic:assets:generate-presets"
+alias srefresh="echo 'Refreshing Statamic instance...' && scache && sconfig && sroutes && spresets && echo 'Refreshing done!'"
 
 # PHP
 alias cfresh="rm -rf vendor/ composer.lock && composer i"

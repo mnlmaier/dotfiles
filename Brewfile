@@ -4,6 +4,7 @@ tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
 tap 'nicoverbruggen/homebrew-cask'
+tap 'shopify/shopify'
 
 # Binaries
 brew 'awscli'
@@ -40,6 +41,7 @@ brew 'node'
 brew 'redis'
 brew 'yarn'
 brew 'nvm'
+brew 'themekit'
 
 # Productivity Apps
 cask '1password' # Password Management
