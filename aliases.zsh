@@ -18,6 +18,9 @@ alias papatom="projects && cd papatom/ && ls"
 alias sp="projects && cd strichpunkt-design/ && ls"
 alias dhlnext="projects && cd strichpunkt-design/dpdhl-next && ls"
 alias mindmates="projects && cd mind-mates/ && ls"
+alias fredmansky="projects && cd fredmansky/ && ls"
+alias morethingsdigital="projects && cd morethingsdigital/ && ls"
+alias 21torr="projects && cd 21torr/ && ls"
 
 # Laravel
 alias a="php artisan"
