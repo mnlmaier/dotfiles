@@ -53,6 +53,8 @@ mkdir $HOME/Code/neverstatic
 mkdir $HOME/Code/mind-mates
 mkdir $HOME/Code/mind-mates/nushu
 mkdir $HOME/Code/nutz
+mkdir $HOME/Code/21torr
+mkdir $HOME/Code/fredmansky
 
 # Clone Github repositories
 $DOTFILES/clone.sh

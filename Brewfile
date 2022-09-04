@@ -92,6 +92,7 @@ cask 'iina' # Video Player
 cask 'vlc' # Video Player
 cask 'handbrake' # Video conversion
 cask 'sip' # Color picker
+cask 'shottr' # Screenshot tool
 
 # Browsers & Web
 cask 'google-chrome'
@@ -135,3 +136,4 @@ mas 'Craft', id: 1487937127 # Document Building
 mas 'Canary Mail', id: 1236045954 # Mails
 mas 'Paste', id: 967805235 # Clipboard Manager
 mas 'MindNode', id: 1218718027 # Flowcharts & Sitemaps
+mas 'Dropover', id: 1355679052 # Files sammeln und gleichzeitig verarbeiten
