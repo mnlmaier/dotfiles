@@ -81,6 +81,7 @@ cask 'tinkerwell' # Quick PHP Snippet Testing
 cask 'termius' # SSH Client
 cask 'tower' # Git Client
 cask 'kaleidoscope' # Diff visualizer & Merge Helper
+cask 'xcodes' # Different XCode versions
 
 # Design, Video & Graphics
 cask 'figma'
