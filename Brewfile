@@ -82,6 +82,7 @@ cask 'termius' # SSH Client
 cask 'tower' # Git Client
 cask 'kaleidoscope' # Diff visualizer & Merge Helper
 cask 'xcodes' # Different XCode versions
+cask 'warp' # Terminal alternative
 
 # Design, Video & Graphics
 cask 'figma'
