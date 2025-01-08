@@ -1,0 +1,37 @@
+#!/bin/bash
+
+# Get the last 5 commits and their hashes
+commits=$(git log --oneline -n 5)
+commit_list=()
+commit_hashes=()
+
+# Populate arrays for commit messages and hashes
+while IFS= read -r line; do
+  commit_list+=("$line")
+  commit_hashes+=("$(echo "$line" | awk '{print $1}')")
+done <<< "$commits"
+
+# Display the menu
+echo "Select a commit to fix up:"
+select commit in "${commit_list[@]}"; do
+  if [[ -n "$commit" ]]; then
+    selected_hash=$(echo "$commit" | awk '{print $1}')
+    break
+  else
+    echo "Invalid selection. Please try again."
+  fi
+done
+
+# Validate the selected hash
+if [ -z "$selected_hash" ]; then
+  echo "No valid commit selected. Exiting."
+  exit 1
+fi
+
+# Run the fixup command
+git commit --fixup="$selected_hash"
+
+# Run the rebase with autosquash
+git rebase -i --autosquash "$selected_hash~1"
+
+echo "Fixup commit and rebase completed!"
